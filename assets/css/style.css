@@ -1509,19 +1509,21 @@ section {
   margin-bottom: 0;
 }
 
-.contact  {
+.contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
 }
 
-.contact  .validate {
+.contact .php-email-form .validate {
+  display: none;
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
 }
 
-.contact  .error-message {
+.contact .php-email-form .error-message {
+  display: none;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -1529,11 +1531,12 @@ section {
   font-weight: 600;
 }
 
-.contact .error-message br+br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .sent-message {
+.contact .php-email-form .sent-message {
+  display: none;
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -1541,13 +1544,14 @@ section {
   font-weight: 600;
 }
 
-.contact .loading {
+.contact .php-email-form .loading {
+  display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .loading:before {
+.contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1559,27 +1563,27 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact input,
-.contact textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact input:focus,
-.contact textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #e96b56;
 }
 
-.contact  input {
+.contact .php-email-form input {
   padding: 10px 15px;
 }
 
-.contact  textarea {
+.contact .php-email-form textarea {
   padding: 12px 15px;
 }
 
-.contact button[type=submit] {
+.contact .php-email-form button[type=submit] {
   background: #e96b56;
   border: 0;
   border-radius: 50px;
@@ -1588,10 +1592,9 @@ section {
   transition: 0.4s;
 }
 
-.contact button[type=submit]:hover {
+.contact .php-email-form button[type=submit]:hover {
   background: #e6573f;
 }
-
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
