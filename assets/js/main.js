@@ -259,29 +259,38 @@
    */
   new PureCounter();
 
+
+
+})()
+
   /*----- Added (not in Bootstrap Theam) -----*/
 
   /*--------- For Slider ---------------*/
 
-  let items = document.querySelectorAll('.carousel .carousel-item')
-
-  items.forEach((el) => {
-    const minPerSlide = 4
-    let next = el.nextElementSibling
-    for (var i = 1; i < minPerSlide; i++) {
-      if (!next) {
-        // wrap carousel by using first child
-        next = items[0]
-      }
-      let cloneChild = next.cloneNode(true)
-      el.appendChild(cloneChild.children[0])
-      next = next.nextElementSibling
-    }
-  })
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
 
   /*--------- For Slider End ----------------*/
 
   /*----- Added (not in Bootstrap Theam) End ------*/
-
-})()
 
