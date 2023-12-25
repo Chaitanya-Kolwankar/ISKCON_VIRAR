@@ -931,10 +931,9 @@ section {
 .counts .count-box span {
   font-size: 42px;
   line-height: 24px;
-  display: block;
+  /* display: block; */
   font-weight: 700;
   color: #545454;
-  margin-left: 50px;
 }
 
 .counts .count-box p {
@@ -1319,7 +1318,6 @@ section {
   margin-bottom: 30px;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
-  text-align: center;
 }
 
 .pricing h3 {
@@ -1337,7 +1335,6 @@ section {
 }
 
 .pricing h4 span {
-  color: #bababa;
   font-size: 18px;
   display: block;
 }
@@ -1345,7 +1342,6 @@ section {
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: #999;
   text-align: left;
   line-height: 20px;
 }
@@ -1360,13 +1356,12 @@ section {
   padding-right: 4px;
 }
 
-.pricing ul .na {
+/* .pricing ul .na {
   color: #ccc;
-}
+} */
 
-.pricing ul .na i {
-  color: #ccc;
-}
+/* .pricing ul .na i {
+} */
 
 .pricing ul .na span {
   text-decoration: line-through;
