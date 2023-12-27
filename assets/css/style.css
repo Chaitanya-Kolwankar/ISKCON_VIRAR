@@ -1310,7 +1310,7 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing .row {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .pricing .box {
@@ -1386,7 +1386,7 @@ section {
 
 .pricing .featured {
   z-index: 10;
-  margin: -30px -5px 0 -5px;
+  margin: -24px -5px 0 -5px;
 }
 
 .pricing .featured .buy-btn {
