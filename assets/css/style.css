@@ -488,6 +488,7 @@ h6 {
 }
 
 #hero .carousel-indicators li {
+  display: none;
   list-style-type: none;
   cursor: pointer;
   background: #e96b56;
